@@ -1,2 +1,4 @@
 List of commonly used terminal comands
 
+// Search recursively for term Leonie in folder FYP
+grep -r Leonie FYP/
