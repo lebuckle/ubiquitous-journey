@@ -5,3 +5,7 @@ grep -r Leonie FYP/
 
 //Activate virtualenv environment 
 source ~/tensorflow/bin/activate 
+
+// Check if packages 'BLAH' are installed using aptitude
+ aptitude search '~i BLAH'
+
