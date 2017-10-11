@@ -19,4 +19,7 @@ http://tflearn.org/installation/
 // Restore keyboard to Irish layout
 sudo dpkg-reconfigure keyboard-configuration
 
+// Intel Proxy
+sudo pip install BLAH --proxy=proxy-chain.intel.com:911
+
 
