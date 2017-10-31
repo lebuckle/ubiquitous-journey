@@ -22,4 +22,7 @@ sudo dpkg-reconfigure keyboard-configuration
 // Intel Proxy
 sudo pip install BLAH --proxy=proxy-chain.intel.com:911
 
+// Check memory
+df -h
+
 
