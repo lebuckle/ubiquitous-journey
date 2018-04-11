@@ -25,4 +25,8 @@ sudo pip install BLAH --proxy=proxy-chain.intel.com:911
 // Check memory
 df -h
 
+// Split a file into smaller files each with x lines
+split -l 200000 filename
 
+// Count occurrances of something in a file
+sed 's/echo/echo\n/g' FILE | grep -c "echo"
