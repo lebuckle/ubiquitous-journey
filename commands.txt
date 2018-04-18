@@ -26,7 +26,12 @@ sudo pip install BLAH --proxy=proxy-chain.intel.com:911
 df -h
 
 // Split a file into smaller files each with x lines
-split -l 200000 filename
+split -l 2 --numeric-suffixes input_filename output_prefix
 
 // Count occurrances of something in a file
 sed 's/echo/echo\n/g' FILE | grep -c "echo"
+
+// Call valgrind to check function usage
+valgrind --tool=callgrind --dump-instr=yes --collect-jumps=yes ./file
+
+
