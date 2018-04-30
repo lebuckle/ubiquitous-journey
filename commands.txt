@@ -34,4 +34,8 @@ sed 's/echo/echo\n/g' FILE | grep -c "echo"
 // Call valgrind to check function usage
 valgrind --tool=callgrind --dump-instr=yes --collect-jumps=yes ./file
 
+// Append to all files
+for filename in *.png; do mv "$filename" "render_ $filename"; done
 
+// Create a video from images
+ffmpeg -framerate 10 -pattern_type glob -i '*.png' -c:v libx264 -pix_fmt yuv420p out.mp4
