@@ -46,3 +46,12 @@ ffmpeg -framerate 10 -pattern_type glob -i '*.png' -c:v libx264 -pix_fmt yuv420p
 mencoder mf://@frames.txt -mf w=1920:h=1080:fps=30:type=jpg -ovc x264 -x264encopts subq=6:partitions=all:8x8dct:me=umh:frameref=5:bframes=3:b_pyramid=normal:weight_b -o a.avi
 // png
 mencoder mf://@frames.txt -mf w=1920:h=1080:fps=30:type=png  -ovc x264 -x264encopts subq=6:partitions=all:8x8dct:me=umh:frameref=5:bframes=3:b_pyramid=normal:weight_b -o a.avi
+
+// Grep for all files containing $file and put them into a folder called $file
+file=SomatClassic; mkdir $file; ls | grep $file | xargs -I {} mv {}  "$file/"
+
+// Print number of files in folders in a dir
+find . -type d -print0 | while read -d '' -r dir; do
+    files=("$dir"/*)
+    printf "%5d files in directory %s\n" "${#files[@]}" "$dir"
+done
