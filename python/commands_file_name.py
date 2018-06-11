@@ -1,11 +1,5 @@
 # Save/move files based on their name
 # File format: render_123.png
-import cv2 as cv
-import os
-
-original_file_path = "/home/buckleyl/Documents/Models/DECO_video/XOR_renders/liffey_3_build/"
-target_file_path = "/home/buckleyl/Documents/Models/DECO_video/XOR_renders/liffey_3_build_divide/"
-
 def main(original_path, target_path):
 
 	# list the files
@@ -29,4 +23,4 @@ def main(original_path, target_path):
 			print(render_path)
 
 if __name__ == "__main__":
-  main(original_file_path, target_file_path)
+    main()
