@@ -1,0 +1,6 @@
+0. Tutorial: https://www.tutorialspoint.com/jenkins/jenkins_installation.htm
+1. Install Java 8: https://askubuntu.com/questions/464755/how-to-install-openjdk-8-on-14-04-lts
+2. Install Jenkins: https://jenkins.io/doc/book/installing/
+3. War file in /usr/share/jenkins
+4. run java -jar jenkins.war 
+5. If port is unavailable: java -jar jenkins.war --ajp13Port=-1 --httpPort=9090
