@@ -57,4 +57,4 @@ find . -type d -print0 | while read -d '' -r dir; do
 done
 
 // Open explorer here in Ubuntu
-nautilus --browser
+nautilus --browser .

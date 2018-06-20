@@ -3,4 +3,9 @@
 2. Install Jenkins: https://jenkins.io/doc/book/installing/
 3. War file in /usr/share/jenkins
 4. run java -jar jenkins.war 
+or sudo service jenkins start
 5. If port is unavailable: java -jar jenkins.war --ajp13Port=-1 --httpPort=9090
+
+6. Open localhost:9090 - http://127.0.0.1:9090/
+7. Follow instructions and install packages
+8. Download Tomcat: https://www.linode.com/docs/development/frameworks/apache-tomcat-on-ubuntu-16-04/
