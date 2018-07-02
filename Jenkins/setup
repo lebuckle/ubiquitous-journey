@@ -9,3 +9,13 @@ or sudo service jenkins start
 6. Open localhost:9090 - http://127.0.0.1:9090/
 7. Follow instructions and install packages
 8. Download Tomcat: https://www.linode.com/docs/development/frameworks/apache-tomcat-on-ubuntu-16-04/
+
+*** Add tests to the Jenkins File ***
+1. Open the project in Jenkins
+2. Click Pipeline Syntax
+3. Under Sample Step selevt warnings: Scan for compiler warnings
+4. After Scan workspace files select add
+5. In file pattern put in the name of your file e.g. "pylint.py"
+6. In Parser put in PyLint
+7. Add in a status threshold
+8. Click Generate Pipeline Script
