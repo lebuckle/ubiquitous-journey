@@ -31,7 +31,11 @@ String category = matcher.group(3)
 String message = matcher.group(4)
 return new Warning(fileName, Integer.parseInt(lineNumber), "Dynamic Parser", category, message);
 
+*** Blue Ocean ***
 
+*** Link in with Git ***
+1. Require Jenkins checks to pass for pull requests to be merged
+https://help.github.com/articles/about-required-status-checks/
 
 *** Add tests to the Jenkins File ***
 1. Open the project in Jenkins
