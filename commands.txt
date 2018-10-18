@@ -58,3 +58,6 @@ done
 
 // Open explorer here in Ubuntu
 nautilus --browser .
+
+// Sort a python dict alphabetically
+for reg, value in sorted(reg_values.items()):
